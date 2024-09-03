@@ -1,13 +1,12 @@
 #!/usr/bin/env -S -- swipl
 
-:- use_module(/(/(modules, internal), util)).
+:- use_module(/(internal, util)).
 
-:- use_module(/(/(modules, internal), syntax)).
+:- use_module(/(internal, syntax)).
 
-:- use_module(/(/(modules, internal), xform)).
+:- use_module(/(internal, xform)).
 
 :- initialization(main, main).
-
 
 p_comment_line_inner(Prefix) -->
     [ 0'/,
